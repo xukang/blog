@@ -18,7 +18,7 @@ if(fs.existsSync(cwd + '/package.json')){
 pkg = pkg + '.js';
 
 var pack = {};
-pack[pkg] = '**.js';
+//pack[pkg] = '**.js';
 
 console.log(namespace, pkg);
 
@@ -48,9 +48,9 @@ fis.config.merge({
 				},
 				{
 					//所有image目录下的.png，.gif文件
-					reg : /(.*\.(?:png|gif))/i,
+					reg : /^\/(.*)\.(?:png|gif)/i,
 					//发布到/static/pic/xxx目录下
-					release : '/static/pic/$1'
+					release : '/static/${namespace}/$1'
 				},
 				{
 					//reg : '${namespace}-map.json',

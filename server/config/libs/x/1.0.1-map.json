@@ -1,0 +1,16 @@
+{
+    "res": {
+        "libs/x/1.0.1:a.js": {
+            "uri": "/static/libs/x/1.0.1/a.js",
+            "type": "js"
+        },
+        "libs/x/1.0.1:x.js": {
+            "uri": "/static/libs/x/1.0.1/x.js",
+            "type": "js",
+            "deps": [
+                "libs/x/1.0.1:a.js"
+            ]
+        }
+    },
+    "pkg": {}
+}

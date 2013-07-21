@@ -1,0 +1,9 @@
+{
+    "res": {
+        "libs/bootstrap/2.3.2:bootstrap.css": {
+            "uri": "/static/libs/bootstrap/2.3.2/bootstrap.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}
