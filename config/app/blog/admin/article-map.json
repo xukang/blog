@@ -1,0 +1,16 @@
+{
+    "res": {
+        "app/blog/admin/article:page/list.tpl": {
+            "uri": "/template/app/blog/admin/article/page/list.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "app/blog/admin/article:widget/a.tpl": {
+            "uri": "app/blog/admin/article/widget/a.tpl",
+            "type": "tpl"
+        }
+    },
+    "pkg": {}
+}
