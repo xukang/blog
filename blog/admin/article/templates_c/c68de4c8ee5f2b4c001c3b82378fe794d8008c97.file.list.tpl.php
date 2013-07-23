@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2013-07-22 16:19:24
+<?php /* Smarty version Smarty-3.1.14, created on 2013-07-23 14:07:07
          compiled from "D:\www\xukang.ouyangtao.com\template\app\blog\admin\article\page\list.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:2016451ece0dc1fc697-59315649%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c68de4c8ee5f2b4c001c3b82378fe794d8008c97' => 
     array (
       0 => 'D:\\www\\xukang.ouyangtao.com\\template\\app\\blog\\admin\\article\\page\\list.tpl',
-      1 => 1374481160,
+      1 => 1374559613,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <body>
 	<?php if(!class_exists('FISResource')){require_once('D:/www/xukang.ouyangtao.com/smarty/libs/plugins/FISResource.class.php');}FISResource::load("libs/bootstrap/2.3.2:bootstrap.css",$_smarty_tpl->smarty);?>
 	list de
+
 	<?php if(!class_exists('FISResource')){require_once('D:/www/xukang.ouyangtao.com/smarty/libs/plugins/FISResource.class.php');}$_tpl_path=FISResource::load("app/blog/admin/article:widget/a.tpl",$_smarty_tpl->smarty);if(isset($_tpl_path)){echo $_smarty_tpl->getSubTemplate($_tpl_path, $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, $_smarty_tpl->caching, $_smarty_tpl->cache_lifetime, array('title'=>"title"), Smarty::SCOPE_LOCAL);}else{trigger_error('unable to locale resource "'."app/blog/admin/article:widget/a.tpl".'"', E_USER_ERROR);}?>
+	
 </body><?php if(class_exists('FISResource')){echo FISResource::render('js');echo FISResource::renderScriptPool();}?>
 <?php $_smarty_tpl->registerFilter('output', array('FISResource', 'renderResponse'));?></html><?php }} ?>
