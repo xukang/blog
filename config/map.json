@@ -1,0 +1,9 @@
+{
+    "res": {
+        "/static/mod.js": {
+            "uri": "/static/mod.js",
+            "type": "js"
+        }
+    },
+    "pkg": {}
+}

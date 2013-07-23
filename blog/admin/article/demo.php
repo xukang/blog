@@ -6,6 +6,8 @@ require($_SERVER['DOCUMENT_ROOT']."/smarty/libs/Smarty.class.php");
 $smarty = new Smarty;
 $smarty->setTemplateDir($_SERVER['DOCUMENT_ROOT']."/template/");
 $smarty->setConfigDir($_SERVER['DOCUMENT_ROOT']."/config/");
+$smarty->setLeftDelimiter('{%');
+$smarty->setRightDelimiter('%}'); 
 
 $smarty->assign("name", "y");
 

@@ -20,11 +20,20 @@ pkg = pkg + '.js';
 var pack = {};
 //pack[pkg] = '**.js';
 
-console.log(namespace, pkg);
+//console.log(namespace, pkg);
 
 
 fis.config.merge({
     namespace: namespace ,
+	modules: {
+		postprocessor: {
+            tpl: 'require-async',
+            js: 'jswrapper, require-async'
+        },
+        optimizer : {
+            tpl : 'smarty-xss,html-compress'
+        }
+	},
 	settings : {
         postprocessor : {
             jswrapper : {
@@ -91,6 +100,11 @@ fis.config.merge({
 					}
 				}
 		]
+	},
+	deploy: {
+		xukang:{
+			to: 'd:/www/xukang.ouyangtao.com'
+		}	
 	},
 	pack : pack
 	

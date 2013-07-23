@@ -9,11 +9,19 @@
         },
         "app/blog/admin/article:widget/a.tpl": {
             "uri": "app/blog/admin/article/widget/a.tpl",
-            "type": "tpl"
+            "type": "tpl",
+            "extras": {
+                "async": [
+                    "app/blog/admin/article:widget/b.js"
+                ]
+            }
         },
         "app/blog/admin/article:widget/b.js": {
             "uri": "/static/app/blog/admin/article/widget/b.js",
-            "type": "js"
+            "type": "js",
+            "deps": [
+                "app/blog/admin/article:widget/x.js"
+            ]
         },
         "app/blog/admin/article:widget/x.js": {
             "uri": "/static/app/blog/admin/article/widget/x.js",
