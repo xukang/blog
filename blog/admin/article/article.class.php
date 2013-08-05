@@ -32,20 +32,20 @@
 		
 		public function get(){
 			$con = $this->connect();
-			if(!$con){
+			if(!$con){ 
 				return 0;
 			}
 			$sql = "select * from article where id = ".$this->fields["id"].";";
 		
 			$result = mysql_query($sql);
-			if(!$result){
+			if(!$result){ 
 				return 0;
 			}
 
 			$row = mysql_fetch_object($result);
 			$this->close();
 
-			if(!$row){
+			if(!$row){ 
 				return 0;
 			}
 			$this->fields = $row;
@@ -55,13 +55,14 @@
 
 		public function save(){
 			$con = $this->connect();
-			if(!$con){
+			if(!$con){ 
 				return 0;
 			}
 		
-			if( $this->fields["id"] === 0){
-				$sql= "insert into article values ('".join(array_values($this->fields),"','")."');";
+			if( $this->fields["id"] == 0){
+				$sql= "insert into article values ('".join(array_values($this->fields),"','")."');"; 
 				$result = mysql_query($sql) ? mysql_insert_id(): 0;
+				
 				$this->filed["id"] = $result;
 			}else{
 
@@ -81,7 +82,7 @@
 				$sql.= " where id=".$this->fields["id"];
 
 				$result = mysql_query($sql) ? 1 : 0;
-
+				
 			}
 
 			
