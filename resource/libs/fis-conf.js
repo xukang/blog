@@ -93,5 +93,9 @@ fis.config.merge({
 		]
 	},
 	pack : pack
-	
+	,deploy : {
+		xukang: {
+			to: '/www/xukang.ouyangtao.com'
+		}
+	}
 });

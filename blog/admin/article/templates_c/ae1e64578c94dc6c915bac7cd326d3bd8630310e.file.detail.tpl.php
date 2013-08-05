@@ -1,30 +1,33 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2013-08-01 11:10:51
-         compiled from "D:\www\xukang.ouyangtao.com\template\app\blog\admin\article\page\list.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:2016451ece0dc1fc697-59315649%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.14, created on 2013-08-01 11:10:53
+         compiled from "D:\www\xukang.ouyangtao.com\template\app\blog\admin\article\page\detail.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:1980951f9cab0a5bf67-98783705%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'c68de4c8ee5f2b4c001c3b82378fe794d8008c97' => 
+    'ae1e64578c94dc6c915bac7cd326d3bd8630310e' => 
     array (
-      0 => 'D:\\www\\xukang.ouyangtao.com\\template\\app\\blog\\admin\\article\\page\\list.tpl',
-      1 => 1375326650,
+      0 => 'D:\\www\\xukang.ouyangtao.com\\template\\app\\blog\\admin\\article\\page\\detail.tpl',
+      1 => 1375324927,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2016451ece0dc1fc697-59315649',
+  'nocache_hash' => '1980951f9cab0a5bf67-98783705',
   'function' => 
   array (
   ),
   'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_51ece0dc27d563_96057496',
+  'unifunc' => 'content_51f9cab0bf4b88_76073925',
   'variables' => 
   array (
-    'list' => 0,
-    'item' => 0,
+    'id' => 0,
+    'title' => 0,
+    'category' => 0,
+    'content' => 0,
+    'keyword' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_51ece0dc27d563_96057496')) {function content_51ece0dc27d563_96057496($_smarty_tpl) {?><!DOCTYPE HTML>
+<?php if ($_valid && !is_callable('content_51f9cab0bf4b88_76073925')) {function content_51f9cab0bf4b88_76073925($_smarty_tpl) {?><!DOCTYPE HTML>
 <?php  ?><html>
 <head>
 	<meta charset="utf-8">
@@ -41,40 +44,42 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 	
 	<div class="container">
 		<div class="row">
-			<div class="span12">
-				<h2>文章列表</h2>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th class="span1">#</th>
-							<th class="span2">分类</th>
-							<th>标题</th>
-							<th class="span2">操作</th>
-						</tr>
-					</thead>
-					<tbody>
-						<?php  $_smarty_tpl->tpl_vars['item'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['item']->_loop = false;
- $_from = $_smarty_tpl->tpl_vars['list']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
- $_smarty_tpl->tpl_vars['item']->index=-1;
-foreach ($_from as $_smarty_tpl->tpl_vars['item']->key => $_smarty_tpl->tpl_vars['item']->value){
-$_smarty_tpl->tpl_vars['item']->_loop = true;
- $_smarty_tpl->tpl_vars['item']->index++;
-?>
-						<tr>
-							<td><?php echo $_smarty_tpl->tpl_vars['item']->index;?>
-</td>
-							<td><?php echo $_smarty_tpl->tpl_vars['item']->value['category'];?>
-</td>
-							<td><a href="detail.php?id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
-"><?php echo $_smarty_tpl->tpl_vars['item']->value['title'];?>
-</a></td>
-							<td><a href="delete.php?id=<?php echo $_smarty_tpl->tpl_vars['item']->value['id'];?>
-" class="btn btn-link  btn-small">删除</a></td>
-						</tr>
-						<?php } ?>
-					</tbody>
-				</table>
-			</div>
+		<div class="span12">
+			<h2>新建文章</h2>
+			<form action="demo.php" method="post">
+				<input type="hidden" name="id" value="<?php echo $_smarty_tpl->tpl_vars['id']->value;?>
+">
+				<fieldset>
+					<label>标题</label>
+					<input type="text" name="title" class="span8" value="<?php echo $_smarty_tpl->tpl_vars['title']->value;?>
+">
+					
+					
+					<label class="" >分类</label>
+					<select name="category" class="span2">
+						<option value="0">&nbsp;&nbsp;</option>
+						<option value="1" <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['category']->value;?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_tmp1==1){?>selected<?php }?>>HTML</option>
+						<option value="2" <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['category']->value;?>
+<?php $_tmp2=ob_get_clean();?><?php if ($_tmp2==2){?>selected<?php }?>>CSS</option>
+					</select>
+					 
+					 <label>正文</label>
+					 <textarea name="content" rows="20" class="span8" ><?php echo $_smarty_tpl->tpl_vars['content']->value;?>
+</textarea>
+					
+					 <label>关键字</label>
+					 <input type="text" name="keyword" class="span8" value="<?php echo $_smarty_tpl->tpl_vars['keyword']->value;?>
+">
+
+					 <div>
+						<button type="submit" class="btn btn-primary">保存</button>
+						<button type="button" class="btn">取消</button>
+					 </div>
+				</fieldset>
+			</form>
+			
+		</div>
 		</div>
 	</div>
 

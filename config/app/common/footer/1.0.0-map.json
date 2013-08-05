@@ -1,0 +1,9 @@
+{
+    "res": {
+        "app/common/footer/1.0.0:widget/footer.tpl": {
+            "uri": "app/common/footer/1.0.0/widget/footer.tpl",
+            "type": "tpl"
+        }
+    },
+    "pkg": {}
+}

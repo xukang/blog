@@ -1,0 +1,9 @@
+{
+    "res": {
+        "app/common/navbar/1.0.0:widget/navbar.tpl": {
+            "uri": "app/common/navbar/1.0.0/widget/navbar.tpl",
+            "type": "tpl"
+        }
+    },
+    "pkg": {}
+}

@@ -1,1 +1,17 @@
-{"res":{"libs/bootstrap/2.3.2:bootstrap-responsive-980.css":{"uri":"/static/libs/bootstrap/2.3.2/bootstrap-responsive-980.css","type":"css"},"libs/bootstrap/2.3.2:bootstrap-responsive.css":{"uri":"/static/libs/bootstrap/2.3.2/bootstrap-responsive.css","type":"css"},"libs/bootstrap/2.3.2:bootstrap.css":{"uri":"/static/libs/bootstrap/2.3.2/bootstrap.css","type":"css"}},"pkg":{}}
+{
+    "res": {
+        "libs/bootstrap/2.3.2:bootstrap-responsive-980.css": {
+            "uri": "/static/libs/bootstrap/2.3.2/bootstrap-responsive-980.css",
+            "type": "css"
+        },
+        "libs/bootstrap/2.3.2:bootstrap-responsive.css": {
+            "uri": "/static/libs/bootstrap/2.3.2/bootstrap-responsive.css",
+            "type": "css"
+        },
+        "libs/bootstrap/2.3.2:bootstrap.css": {
+            "uri": "/static/libs/bootstrap/2.3.2/bootstrap.css",
+            "type": "css"
+        }
+    },
+    "pkg": {}
+}

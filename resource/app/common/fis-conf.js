@@ -50,7 +50,7 @@ fis.config.merge({
 					reg : /^\/widget\/(.*\.tpl)$/i,
 					isMod : true,
 					url : '${namespace}/widget/$1',
-					release : '/server/template/${namespace}/widget/$1'
+					release : '/template/${namespace}/widget/$1'
 				},
 				{
 					reg : /^\/widget\/(.*\.(js|css))$/i,
@@ -71,7 +71,7 @@ fis.config.merge({
 				{
 					//reg : '${namespace}-map.json',
 					reg: /-map.json$/,
-					release : '/server/config/${namespace}-map.json'
+					release : '/config/${namespace}-map.json'
 				},
 				{
 					reg: /^\/static\/(.*)/i,
@@ -92,6 +92,12 @@ fis.config.merge({
 				}
 		]
 	},
-	pack : pack
+	pack : pack,
+	
+	deploy : {
+		xukang: {
+			to: '/www/xukang.ouyangtao.com'
+		}
+	}
 	
 });

@@ -1,5 +1,12 @@
 {
     "res": {
+        "app/blog/admin/article:page/detail.tpl": {
+            "uri": "/template/app/blog/admin/article/page/detail.tpl",
+            "type": "tpl",
+            "extras": {
+                "isPage": true
+            }
+        },
         "app/blog/admin/article:page/list.tpl": {
             "uri": "/template/app/blog/admin/article/page/list.tpl",
             "type": "tpl",
@@ -9,18 +16,13 @@
         },
         "app/blog/admin/article:widget/a.tpl": {
             "uri": "app/blog/admin/article/widget/a.tpl",
-            "type": "tpl",
-            "extras": {
-                "async": [
-                    "app/blog/admin/article:widget/b.js"
-                ]
-            }
+            "type": "tpl"
         },
         "app/blog/admin/article:widget/b.js": {
             "uri": "/static/app/blog/admin/article/widget/b.js",
             "type": "js",
             "deps": [
-                "app/blog/admin/article:widget/x.js"
+                "widget/x.js"
             ]
         },
         "app/blog/admin/article:widget/x.js": {

@@ -35,7 +35,7 @@ if($_GET["id"]){
 //$smarty->assign("name", "x");
 
 
-$smarty->display("app/blog/admin/article/page/list.tpl");
+$smarty->display("app/blog/admin/article/page/detail.tpl");
 //echo $smarty->fetch("template.html");
 
 ?>

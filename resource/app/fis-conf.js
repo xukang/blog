@@ -59,6 +59,7 @@ fis.config.merge({
 					reg : /^\/widget\/(.*\.tpl)$/i,
 					isMod : true,
 					url : '${namespace}/widget/$1',
+					
 					release : '/template/${namespace}/widget/$1'
 				},
 				{
